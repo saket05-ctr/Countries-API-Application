@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="main-body ">
+    <header>
+        <h1><a href="/">Where in the world?</a></h1>
+        <div class="dark-mode-button">
+            <i class="fa-regular fa-moon" id="theme-icon"></i>
+            <p class="theme-text">Dark Mode</p>   
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="search-filter-container">
+            <div class="search-container" id="search-box" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a country" class="input-element">
+            </div>
+            <select id="Select-region">
+                <option value="" hidden>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <div class="countries-container"></div>
+        <!-- <div class="country-card">
+            <img src="https://flagcdn.com/jm.svg" alt="">
+            <div class="country-text">
+                <h2>Jamaica</h2>
+                <p>Population: <span>2961161</span></p>
+                <p>Region: <span>Americas</span></p>
+                <p>Capital: <span>Kingston</span></p>
+            </div>
+        </div> -->
+
+        
+    </div>
+
+</body>
+</html>
