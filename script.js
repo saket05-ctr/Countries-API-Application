@@ -63,7 +63,7 @@ function RenderCountries(data){
         CountryText.innerHTML = `<h2>${country.name.common}</h2>
                         <p>Population: <span>${country.population}</span></p>
                         <p>Region: <span>${country.region}</span></p>
-                        <p>Capital: <span>${country.capital[0]}</span></p>`;
+                        <p>Capital: <span>${country.capital?.[0]}</span></p>`;  
 
         countryCard.append(countryImg,CountryText);
         CountriesContainer.appendChild(countryCard);
